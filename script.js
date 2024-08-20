@@ -1,8 +1,19 @@
-let num = 1;
+let dispari = 0;
+let totDispari = 0;
 
-while (num < 21) {
-    if ((num % 2) == 0) {
-        console.log(num);        
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 == 0) {
+        console.log(i);
+    }else{
+        dispari = dispari + i
+        totDispari ++
     }    
-    num++
 }
+
+console.log(`Sono presenti ${totDispari} numeri dispari`);
+console.log(`La loro somma ammonta a ${dispari}`);
+console.log(`La media è ${dispari / totDispari}`);
+
+
+
+
